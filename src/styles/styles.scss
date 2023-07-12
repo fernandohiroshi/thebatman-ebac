@@ -41,7 +41,7 @@ body {
         text-align: left;
         width: 100%;
         max-width: 1024px;
-        padding-bottom: 16px;
+        padding-bottom: 16px 0;
     }
 
     p {
@@ -110,7 +110,7 @@ body {
 .container_2 {
     width: 88%;
     height: 50vh;
-    background-position: le4;
+    background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(https://images3.alphacoders.com/129/1297317.jpg);
@@ -152,8 +152,6 @@ body {
     float: right;
     background-image: url(https://images.alphacoders.com/121/1213922.jpg);
     background-attachment: fixed;
-    margin-bottom: 8vh;
-    transition: ease 1s;
     object-fit: cover;
 }
 
@@ -286,12 +284,10 @@ header {
 
     .container {
         background-size: cover;
-        background-position: center top;
         height: 100vh;
     
         h1 {
             font-size: 2.2rem;
-            text-align: left;
             width: 80%;
             max-width: 600px;
             margin: 16px 0;
@@ -305,44 +301,20 @@ header {
 
         a {
             max-width: 500px;
-            width: 100%;
-            display: flex;
             justify-content: center;
 
             button {
-                background: transparent;
-                border: 1px solid rgba(240, 255, 255, 0.555);
                 margin-top: 4vh;
-                padding: 16px;
+                padding: 12px;
                 font-size: 1rem;
-                border-radius: 4px;
-                display: flex;
                 align-items: center;
-                justify-content: center;
-                transition: ease 1s;
-
-                i {
-                    margin-right: 8px;
-                }
-
-                &:hover {
-                    background-color: rgba(240, 255, 255, 0.333);
-                    transition: ease 1s;
-                    letter-spacing: 8px;
-                }
         }
     }
-    }
+}
 
     .container-sinopse {
         width: 70%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         max-width: 600px;
-        margin: 0 auto;
-    
     
         h2 {
             font-size: 2rem;
@@ -357,64 +329,15 @@ header {
 
     .container_2 {
         width: 100%;
-        height: 60vh;
-        background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(https://images3.alphacoders.com/129/1297317.jpg);
-        background-attachment: fixed;
-    }
-
-    .wallpapers {
-        max-width: 1224px;
-        width: 90%;
-        margin: 0 auto;
-        padding: 40px 0;
-    
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 24px;
-        }
-    }
-
-    .photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-        transition: none;
-    
-        &:hover {
-            padding: 0;
-            transition: none;
-        }
-    }
-
-    .container_3 {
-        width: 100%;
-        height: 80vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-image: url(https://images.alphacoders.com/121/1213922.jpg);
-        background-attachment: fixed;
-        margin-bottom: 4vh;
-        transition: ease 1s;
+        height: 70vh;
     }
 
     .container-trailer {
-        width: 100%;
         height: 60vh;
-        max-width: 80vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 4vh  auto;
-        flex-direction: column;
     
         h2 {
             font-size: 2rem;
-            border-bottom: 1px solid rgba(240, 255, 255, 0.555);
             width: 100%;
             text-align: left;
     
@@ -427,13 +350,32 @@ header {
         }
     }
 
+    .container_3 {
+        height: 70vh;
+        margin-bottom: 4vh;
+    }
+
+    .wallpapers {
+    
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+    }
+
+    .photo img {
+        transition: none;
+    
+        &:hover {
+            padding: 0;
+            transition: none;
+        }
+    }
+
     footer {
-        text-align: center;
         padding: 24px;
         letter-spacing: 4px;
         font-size: 10px;
         
     }
-    
-
 }
