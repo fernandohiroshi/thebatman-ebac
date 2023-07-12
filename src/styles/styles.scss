@@ -244,8 +244,8 @@ header {
 
     .container {
         width: 100%;
-        height: 80vh;
-        background-position: center top;
+        height: 100vh;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(../../dist/img/bg1.jpg);
@@ -276,7 +276,7 @@ header {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        max-width: 1024px;
+        max-width: 600px;
         margin: 0 auto;
     
     
@@ -289,6 +289,16 @@ header {
             text-align: justify;
             font-size: 1rem;
         }
+    }
+
+    .container_2 {
+        width: 100%;
+        height: 40vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../../dist/img/bg2.jpg);
+        background-attachment: fixed;
     }
 
     .wallpapers {
@@ -318,14 +328,13 @@ header {
 
     .container_3 {
         width: 100%;
-        height: 60vh;
+        height: 40vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top right;
-        float: right;
         background-image: url(../../dist/img/bg3.jpg);
         background-attachment: fixed;
-        margin-bottom: 8vh;
+        margin-bottom: 4vh;
         transition: ease 1s;
     }
 
@@ -349,7 +358,7 @@ header {
     
         div {
             width: 100%;
-            height: 600px;
+            height: 400px;
             margin-top: 8px;
         }
     }
@@ -357,8 +366,8 @@ header {
     footer {
         text-align: center;
         padding: 24px;
-        letter-spacing: 8px;
-        font-size: 12px;
+        letter-spacing: 4px;
+        font-size: 10px;
         
     }
     
