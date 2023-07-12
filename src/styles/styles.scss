@@ -22,7 +22,7 @@ body {
 
 .container {
     width: 100%;
-    height: 80vh;
+    height: 92vh;
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,26 +35,56 @@ body {
     flex-direction: column;
 
     h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: left;
         width: 100%;
         max-width: 1024px;
     }
 
     p {
-        font-size: 1.3rem;
-        max-width: 1024px;
-        
+        font-size: 1.2rem;
+        max-width: 800px;
+        text-align: justify;
+    }
+
+    a {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        button {
+            background: transparent;
+            border: 1px solid rgba(240, 255, 255, 0.555);
+            margin-top: 2vh;
+            padding: 16px;
+            font-size: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            align-items: right;
+            justify-content: center;
+            transition: ease 1s;
+
+            i {
+                margin-right: 8px;
+            }
+
+            &:hover {
+                background-color: rgba(240, 255, 255, 0.333);
+                transition: ease 1s;
+                letter-spacing: 8px;
+            }
+        }
     }
 }
 
 .container-sinopse {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1024px;
+    max-width: 800px;
     margin: 0 auto;
 
 
@@ -64,14 +94,14 @@ body {
     }
 
     p {
+        font-size: 1.2rem;
         text-align: justify;
-        font-size: 1.3rem;
     }
 }
 
 .container_2 {
-    width: 80%;
-    height: 60vh;
+    width: 88%;
+    height: 64vh;
     background-position: le4;
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,32 +111,32 @@ body {
 
 .container-trailer {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     max-width: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8vh  auto;
+    margin: 4vh  auto;
     flex-direction: column;
 
     h2 {
         font-size: 3rem;
-        border-bottom: 1px solid rgba(240, 255, 255, 0.555);
-        width: 100%;
+        width: 80%;
         text-align: right;
 
     }
 
     div {
-        width: 100%;
-        height: 700px;
+        width: 80%;
+        height: 500px;
         margin-top: 8px;
+        transition: ease .4s;
     }
 }
 
 .container_3 {
-    width: 70%;
-    height: 50vh;
+    width: 100%;
+    height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
@@ -161,6 +191,8 @@ footer {
 
 header {
     background-color: black;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar {
@@ -179,7 +211,7 @@ header {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .nav-link {
@@ -205,7 +237,7 @@ header {
     background-color: azure;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
     .mobile {
         display: block;
     }
@@ -248,17 +280,48 @@ header {
         height: 100vh;
     
         h1 {
-            font-size: 3rem;
+            font-size: 2.2rem;
             text-align: left;
             width: 80%;
             max-width: 600px;
+            margin: 16px 0;
         }
     
         p {
             font-size: 1rem;
-            max-width: 600px;
+            max-width: 500px;
             width: 80%;
         }
+
+        a {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            button {
+                background: transparent;
+                border: 1px solid rgba(240, 255, 255, 0.555);
+                margin-top: 4vh;
+                padding: 16px;
+                font-size: 1rem;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: ease 1s;
+
+                i {
+                    margin-right: 8px;
+                }
+
+                &:hover {
+                    background-color: rgba(240, 255, 255, 0.333);
+                    transition: ease 1s;
+                    letter-spacing: 8px;
+                }
+        }
+    }
     }
 
     .container-sinopse {
@@ -349,7 +412,7 @@ header {
     
         div {
             width: 100%;
-            height: 400px;
+            height: 50%;
             margin-top: 8px;
         }
     }
